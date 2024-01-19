@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random</title>
+  </head>
+  <body>
+    <!-- <h3>Random Number: <%= Math.floor((Math.random() * 10) + 1) %></h3> -->
+    <h3>Random Number: <%= num %></h3>
+
+    <% if(num%2 === 0) {%>
+    <h3>Angka Genap</h3>
+    <%} else {%>
+      <h3>Angka Ganjil</h3>
+    <%}%>
+    
+    <h1> That Number is: <%= num%2 === 0 ? "Even" : "Odd" %></h1>
+    
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= data.title %> - Dev Com</title>
+    <link rel="stylesheet" href="/app.css">
+  </head>
+  <body>
+    <% if(data.img) {%>
+    <img src="<%= data.img %>" />
+    <%}%>
+    <h1>Title : <%= data.title %></h1>
+    <p><%= data.description %></p>
+    <h3>Follower : <%= data.followers %></h3>
+    
+    <hr>
+    
+    <article>
+      <% for(let post of data.posts) { %>
+      <p><%= post.title %> - <%= post.author %></p>
+      <% } %>
+    </article>
+  </body>
+</html>
